@@ -23,5 +23,5 @@ COPY ./start.sh /app/start.sh
 ENV GIN_MODE=release
 ENV TZ=Asia/Bangkok
 EXPOSE 3000
-CMD ["/app/main"]
-ENTRYPOINT [ "/app/start.sh" ]
+CMD ["main"]
+ENTRYPOINT [ "start.sh" ]
